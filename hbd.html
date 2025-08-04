@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Ucapan Ulang Tahun untuk Hani</title>
+  <link href="https://fonts.googleapis.com/css2?family=Rubik:wght@400;600&display=swap" rel="stylesheet">
+  <style>
+    body {
+      margin: 0;
+      padding: 0;
+      font-family: 'Rubik', sans-serif;
+      background: linear-gradient(135deg, #ffb6c1, #87cefa);
+      color: #333;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      min-height: 100vh;
+      text-align: center;
+      overflow: hidden;
+    }
+
+    .balloon {
+      position: absolute;
+      width: 60px;
+      height: 80px;
+      background: radial-gradient(circle at 30% 30%, #ff69b4, #ff1493);
+      border-radius: 50% 50% 50% 50% / 60% 60% 40% 40%;
+      animation: floatUp 10s linear infinite;
+      opacity: 0.7;
+    }
+
+    .balloon::after {
+      content: '';
+      position: absolute;
+      bottom: -30px;
+      left: 50%;
+      width: 2px;
+      height: 30px;
+      background: #444;
+      transform: translateX(-50%);
+    }
+
+    @keyframes floatUp {
+      0% { transform: translateY(100vh) rotate(0deg); }
+      100% { transform: translateY(-120vh) rotate(360deg); }
+    }
+
+    .card {
+      background: white;
+      padding: 2rem;
+      border-radius: 20px;
+      box-shadow: 0 0 30px rgba(0, 0, 0, 0.1);
+      max-width: 500px;
+      margin: 1rem;
+      animation: float 3s ease-in-out infinite;
+      position: relative;
+      z-index: 10;
+    }
+
+    @keyframes float {
+      0% { transform: translateY(0); }
+      50% { transform: translateY(-10px); }
+      100% { transform: translateY(0); }
+    }
+
+    h1 {
+      font-size: 2.2rem;
+      color: #e91e63;
+      margin-bottom: 1rem;
+      animation: fadeIn 1.5s ease-in-out;
+    }
+
+    p {
+      font-size: 1.1rem;
+      line-height: 1.6;
+      margin-bottom: 1rem;
+      animation: fadeIn 2s ease-in-out;
+    }
+
+    .love {
+      font-size: 2rem;
+      color: #e91e63;
+      animation: pulse 1.5s infinite;
+    }
+
+    @keyframes pulse {
+      0% { transform: scale(1); }
+      50% { transform: scale(1.2); }
+      100% { transform: scale(1); }
+    }
+
+    @keyframes fadeIn {
+      from { opacity: 0; transform: translateY(10px); }
+      to { opacity: 1; transform: translateY(0); }
+    }
+
+    audio {
+      margin-top: 2rem;
+      width: 100%;
+    }
+  </style>
+</head>
+<body>
+  <!-- Balon-balon mengambang -->
+  <div class="balloon" style="left: 10%; animation-delay: 0s;"></div>
+  <div class="balloon" style="left: 30%; animation-delay: 3s;"></div>
+  <div class="balloon" style="left: 50%; animation-delay: 6s;"></div>
+  <div class="balloon" style="left: 70%; animation-delay: 1.5s;"></div>
+  <div class="balloon" style="left: 90%; animation-delay: 4.5s;"></div>
+
+  <div class="card">
+    <h1>Selamat Ulang Tahun, Hani! 🎉</h1>
+    <p>
+      Hari ini dunia jadi lebih cerah karena seseorang yang manis, lucu, dan luar biasa lahir di tanggal ini. 🥰
+    </p>
+    <p>
+      Semoga semua impianmu tercapai, dan harimu selalu dipenuhi cinta, tawa, dan kebahagiaan.
+    </p>
+    <p>
+      Terima kasih sudah jadi seseorang yang selalu membuat hari-hari jadi lebih indah 💖
+    </p>
+    <div class="love">💙💗💙💗</div>
+    <audio controls autoplay loop>
+      <source src="https://cdn.pixabay.com/download/audio/2023/03/27/audio_1aa74919b4.mp3?filename=birthday-short-version-142005.mp3" type="audio/mpeg">
+      Browser kamu tidak mendukung audio.
+    </audio>
+  </div>
+</body>
+</html>
